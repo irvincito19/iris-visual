@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Iris Visual Solutions. Creación de Landing Pages para tu negocio, marca u organización con integración a WhatsApp." />
+  <title>Iris Visual Solutions | Creación de Landing Pages</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    .font-display {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    /* Colores Base */
+    .bg-deep-blue {
+      background-color: #0A192F;
+    }
+
+    .bg-brand-blue {
+      background-color: #165ab4;
+    }
+
+    .bg-brand-blue-light {
+      background-color: #1a6ddb;
+    }
+
+    .text-brand-blue {
+      color: #165ab4;
+    }
+
+    .text-brand-blue-light {
+      color: #3b82f6;
+    }
+
+    .border-brand-blue {
+      border-color: #165ab4;
+    }
+
+    .text-brand-orange {
+      color: #f27212;
+    }
+
+    .bg-brand-orange {
+      background-color: #f27212;
+    }
+
+    .border-brand-orange {
+      border-color: #f27212;
+    }
+
+    /* Animaciones y utilidades extra */
+    .gradient-text-orange {
+      background: linear-gradient(135deg, #f27212 0%, #ff983f 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hover-lift {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-lift:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(242, 114, 18, 0.2);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #0A192F;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #165ab4;
+      border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #f27212;
+    }
+  </style>
+</head>
+
+<body class="bg-deep-blue text-white min-h-screen flex flex-col antialiased">
+
+  <!-- Navbar -->
+  <header class="fixed w-full top-0 z-50 bg-deep-blue/90 backdrop-blur-md border-b border-brand-blue/30">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="text-2xl font-extrabold font-display text-white flex flex-col">
+        <div class="flex items-center leading-none">
+          <span class="text-brand-orange font-black mr-1 text-3xl">/</span> IRIS VISUAL
+        </div>
+        <span class="text-xs text-brand-orange tracking-widest pl-5 mt-1 uppercase font-bold">Solutions</span>
+      </div>
+
+      <nav class="hidden md:flex space-x-10 text-sm font-bold tracking-wide">
+        <a href="#beneficios" class="text-white hover:text-brand-orange transition-colors">Beneficios</a>
+        <a href="#como-funciona" class="text-white hover:text-brand-orange transition-colors">Soluciones</a>
+        <a href="#contacto" class="text-white hover:text-brand-orange transition-colors">Contacto</a>
+      </nav>
+      <a href="#contacto"
+        class="bg-brand-orange text-white px-6 py-2.5 rounded-lg font-bold text-sm hover:bg-[#e0650d] transition-colors shadow-lg shadow-orange-900/40">
+        Cotizar Landing
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-deep-blue">
+    <!-- Glow blobs backgound suaves para tema oscuro -->
+    <div
+      class="absolute top-1/4 -left-1/4 w-[600px] h-[600px] bg-brand-blue rounded-full mix-blend-screen filter blur-[150px] opacity-20 animate-pulse">
+    </div>
+    <div
+      class="absolute bottom-1/4 right-0 w-[500px] h-[500px] bg-brand-orange rounded-full mix-blend-screen filter blur-[150px] opacity-20">
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center relative z-10 w-full mt-10 md:mt-0">
+      <div class="order-2 md:order-1 text-center md:text-left">
+        <div
+          class="inline-flex items-center border border-brand-orange/50 bg-brand-orange/10 text-brand-orange px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-6 shadow-sm">
+          Diseño Web Estratégico
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold font-display text-white mb-6 leading-tight">
+          Creamos la <span class="gradient-text-orange">Landing Page</span> perfecta para ti
+        </h1>
+        <p class="text-lg text-gray-300 mb-10 max-w-xl mx-auto md:mx-0 leading-relaxed font-light">
+          Impulsa tu negocio, marca u organización con una página web diseñada con un objetivo específico. Captamos
+          clientes y los conectamos directamente a tu WhatsApp.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <a href="#contacto"
+            class="bg-brand-orange hover:bg-[#e0650d] text-white px-8 py-4 rounded-xl font-bold transition-all text-center shadow-lg shadow-orange-500/30">
+            Solicitar Cotización
+          </a>
+          <a href="#beneficios"
+            class="border-2 border-brand-blue-light text-white hover:bg-brand-blue hover:border-brand-blue px-8 py-4 rounded-xl font-bold transition-colors text-center w-full sm:w-auto">
+            Conocer Más
+          </a>
+        </div>
+      </div>
+
+      <div class="order-1 md:order-2 relative px-4 md:px-0">
+        <div
+          class="relative w-full aspect-square md:aspect-video rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(242,114,18,0.2)] border border-brand-blue/40 bg-brand-blue">
+          <!-- Simulated Landing Page Preview / Workspace -->
+          <img
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+            alt="Desarrollo de Landing Pages"
+            class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 opacity-80" />
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-blue via-transparent to-transparent"></div>
+        </div>
+        <!-- Floating notification -> WhatsApp -->
+        <div
+          class="absolute -bottom-6 -left-6 bg-brand-blue p-6 rounded-2xl border border-brand-orange/50 shadow-2xl hidden md:flex items-center gap-4">
+          <div class="bg-brand-orange p-3 rounded-full text-white">
+            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12.031 0C5.397 0 .015 5.385.013 12.023c0 2.122.553 4.195 1.606 6.02L0 24l6.195-1.624c1.764.957 3.755 1.464 5.83 1.465h.005c6.634 0 12.02-5.385 12.023-12.023A12.024 12.024 0 0 0 12.031 0Zm6.822 17.15c-.287.808-1.644 1.547-2.28 1.642-.644.095-1.483.268-4.82-1.116-3.99-1.655-6.575-5.748-6.772-6.012-.197-.263-1.616-2.15-1.616-4.103s1.026-2.905 1.39-3.3c.365-.395.795-.494 1.058-.494.263 0 .526.01.758.02.246.013.57-.098.892.68.328.79 1.058 2.585 1.156 2.782.099.197.164.428.033.69-.131.264-.197.428-.395.658-.197.23-.414.512-.591.68-.197.185-.407.388-.184.772.223.384.992 1.643 2.133 2.658 1.474 1.31 2.685 1.714 3.078 1.91.395.198.625.165.855-.098.23-.263.987-1.152 1.25-1.546.263-.395.526-.33.888-.198.362.132 2.285 1.076 2.68 1.274.394.197.658.296.756.46.098.165.098.955-.189 1.763Z" />
+            </svg>
+          </div>
+          <div>
+            <p class="text-white font-bold text-sm">Nuevo Lead 🎉</p>
+            <p class="text-xs text-blue-200">Desde tu Landing Page</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits / Características Alternadas -->
+  <section id="beneficios" class="py-24 bg-brand-blue border-y border-brand-orange/20">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-20">
+        <h2 class="text-4xl md:text-5xl font-bold font-display text-white mb-4">¿Por qué tener una Landing Page?</h2>
+        <p class="text-blue-100 max-w-2xl mx-auto text-lg pt-2 border-t-2 border-brand-orange inline-block">Una web
+          enfocada puramente en convertir visitantes en clientes o contactos directos.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div
+          class="bg-deep-blue p-8 rounded-3xl border border-brand-orange/30 shadow-xl hover-lift relative overflow-hidden group">
+          <div
+            class="absolute top-0 right-0 w-32 h-32 bg-brand-orange rounded-bl-full opacity-10 group-hover:opacity-20 transition-opacity">
+          </div>
+          <div class="w-16 h-16 bg-brand-orange/20 rounded-2xl flex items-center justify-center mb-8 text-brand-orange">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122">
+              </path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-4 font-display">Objetivo Específico</h3>
+          <p class="text-gray-300 text-sm leading-relaxed">Cada elemento estará diseñado para una meta: vender un
+            producto, agendar una cita o captar los datos de tu cliente potencial.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-deep-blue p-8 rounded-3xl border border-brand-blue-light/50 shadow-xl hover-lift relative overflow-hidden group">
+          <div
+            class="absolute top-0 right-0 w-32 h-32 bg-brand-blue-light rounded-bl-full opacity-10 group-hover:opacity-20 transition-opacity">
+          </div>
+          <div
+            class="w-16 h-16 bg-brand-blue-light/20 rounded-2xl flex items-center justify-center mb-8 text-brand-blue-light">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244">
+              </path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-4 font-display">Conexión a WhatsApp</h3>
+          <p class="text-gray-300 text-sm leading-relaxed">Integramos un embudo directo hacia tu número de WhatsApp para
+            cerrar ventas de forma rápida, personal y efectiva.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-deep-blue p-8 rounded-3xl border border-brand-orange/30 shadow-xl hover-lift relative overflow-hidden group">
+          <div
+            class="absolute top-0 right-0 w-32 h-32 bg-brand-orange rounded-bl-full opacity-10 group-hover:opacity-20 transition-opacity">
+          </div>
+          <div class="w-16 h-16 bg-brand-orange/20 rounded-2xl flex items-center justify-center mb-8 text-brand-orange">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.83M11.42 15.17l-.34.34a2.652 2.652 0 01-3.75 0l-.34-.34m4.43-4.43l.34-.34a2.652 2.652 0 010-3.75l-.34-.34m-4.43 4.43l-5.83 5.877A2.652 2.652 0 012 17.25l5.83-5.877m4.43-4.43l-.34-.34a2.652 2.652 0 00-3.75 0l-.34.34">
+              </path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-4 font-display">Hecho para tu Marca</h3>
+          <p class="text-gray-300 text-sm leading-relaxed">Ya seas un pequeño negocio, un profesionista independiente o
+            una organización, la adaptamos 100% a tu identidad visual.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions Section / Para quién es -->
+  <section id="como-funciona" class="py-24 bg-deep-blue relative">
+    <div class="max-w-7xl mx-auto px-4">
+
+      <div class="flex flex-col md:flex-row justify-between items-end mb-16 border-l-4 border-brand-orange pl-6 gap-4">
+        <div>
+          <h2 class="text-4xl font-bold font-display text-white mb-2">Soluciones Personalizadas</h2>
+          <p class="text-gray-400 text-lg">Creamos páginas de aterrizaje escalables para cualquier necesidad.</p>
+        </div>
+      </div>
+
+      <!-- Alternating rows -->
+      <div class="space-y-20">
+        <!-- Row 1 -->
+        <div class="flex flex-col md:flex-row items-center gap-10">
+          <div
+            class="w-full md:w-1/2 p-8 bg-brand-blue rounded-3xl border border-brand-blue-light/30 text-white relative shadow-2xl">
+            <span class="text-6xl font-black text-brand-orange/20 absolute top-4 right-6 font-display">01</span>
+            <h3 class="text-3xl font-display font-bold mb-4 text-brand-orange">Para Negocios</h3>
+            <p class="text-lg text-blue-100 font-light mb-4">Muestra tus servicios, menú, o catálogo de productos de una
+              forma altamente visual y enfocada en generar ventas directas por WhatsApp. Olvídate de sitios web lentos y
+              complicados.</p>
+            <ul class="space-y-2 text-sm font-medium">
+              <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand-orange" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg> Catálogos de Producto</li>
+              <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand-orange" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg> Recepción de Pedidos</li>
+            </ul>
+          </div>
+          <div class="w-full md:w-1/2 rounded-3xl overflow-hidden aspect-video relative">
+            <img
+              src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Negocios" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-brand-blue/30 backdrop-blur-[2px]"></div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="flex flex-col md:flex-row-reverse items-center gap-10">
+          <div
+            class="w-full md:w-1/2 p-8 bg-brand-orange/10 rounded-3xl border border-brand-orange/30 text-white relative shadow-2xl backdrop-blur-sm">
+            <span class="text-6xl font-black text-brand-orange/20 absolute top-4 right-6 font-display">02</span>
+            <h3 class="text-3xl font-display font-bold mb-4 text-white">Para Marcas Personales</h3>
+            <p class="text-lg text-gray-300 font-light mb-4">¿Eres un profesional ofertando servicios? Centraliza tu
+              portafolio, casos de éxito y un botón directo para que tus clientes te contacten y agenden una asesoría
+              contigo.</p>
+            <ul class="space-y-2 text-sm font-medium">
+              <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand-orange" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg> Citas y Asesorías</li>
+              <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand-orange" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg> Portafolio Digital</li>
+            </ul>
+          </div>
+          <div class="w-full md:w-1/2 rounded-3xl overflow-hidden aspect-video relative border border-brand-orange/20">
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Marca Personal" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-brand-orange/20 backdrop-blur-[2px]"></div>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="flex flex-col md:flex-row items-center gap-10">
+          <div
+            class="w-full md:w-1/2 p-8 bg-brand-blue rounded-3xl border border-brand-blue-light/30 text-white relative shadow-2xl">
+            <span class="text-6xl font-black text-brand-orange/20 absolute top-4 right-6 font-display">03</span>
+            <h3 class="text-3xl font-display font-bold mb-4 text-brand-orange">Para Organizaciones</h3>
+            <p class="text-lg text-blue-100 font-light mb-4">Captación de leads para eventos, cursos, webinars o
+              campañas de fundrising. Una sola página clara, persuasiva y orientada 100% a la conversión.</p>
+            <ul class="space-y-2 text-sm font-medium">
+              <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand-orange" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg> Captación de Leads</li>
+              <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand-orange" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg> Promoción de Eventos</li>
+            </ul>
+          </div>
+          <div class="w-full md:w-1/2 rounded-3xl overflow-hidden aspect-video relative">
+            <img
+              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Organizaciones" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-brand-blue/30 backdrop-blur-[2px]"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto WhatsApp Form -->
+  <section id="contacto" class="py-24 bg-brand-orange relative overflow-hidden">
+    <!-- Decorative element -->
+    <div class="absolute top-0 right-0 w-full h-full overflow-hidden pointer-events-none">
+      <svg class="absolute right-0 top-1/2 -translate-y-1/2 w-[800px] text-white opacity-10" viewBox="0 0 200 200"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill="currentColor"
+          d="M44.7,-76.4C58.9,-69.2,71.8,-59.1,80.9,-46.1C90,-33.1,95.3,-16.5,93.6,-1C91.9,14.5,83.2,29.1,72.9,40.9C62.6,52.7,50.7,61.8,37.3,69.5C23.9,77.2,9,83.5,-5.5,86.7C-20,90,-34.2,90.2,-46.5,84.1C-58.8,78,-69.2,65.6,-77.6,51.8C-86,38,-92.4,22.8,-94.1,7.2C-95.8,-8.4,-92.8,-24.4,-84.9,-37.6C-77,-50.8,-64.2,-61.2,-50.4,-68.8C-36.6,-76.4,-21.8,-81.2,-6.4,-77C8.9,-72.8,24.5,-69.6,30.5,-83.6L30.5,-83.6Z"
+          transform="translate(100 100)"></path>
+      </svg>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-4 relative z-10 flex flex-col lg:flex-row gap-16 items-center">
+
+      <div class="lg:w-5/12 text-center lg:text-left text-white">
+        <div
+          class="inline-block bg-white text-brand-orange px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-6">
+          Cotiza Hoy Mismo
+        </div>
+        <h2 class="text-4xl md:text-5xl font-bold font-display mb-6">Convierte tus Visitas en Clientes Reales</h2>
+        <p class="text-orange-50 mb-8 text-lg font-medium leading-relaxed">Cada Landing Page que creamos tiene un único
+          propósito: Generar Resultados. Escríbenos y comencemos a diseñar la tuya.</p>
+
+        <div class="hidden lg:block space-y-6">
+          <div class="flex items-center gap-4">
+            <div
+              class="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm border border-white/30">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12.031 0C5.397 0 .015 5.385.013 12.023c0 2.122.553 4.195 1.606 6.02L0 24l6.195-1.624c1.764.957 3.755 1.464 5.83 1.465h.005c6.634 0 12.02-5.385 12.023-12.023A12.024 12.024 0 0 0 12.031 0Zm6.822 17.15c-.287.808-1.644 1.547-2.28 1.642-.644.095-1.483.268-4.82-1.116-3.99-1.655-6.575-5.748-6.772-6.012-.197-.263-1.616-2.15-1.616-4.103s1.026-2.905 1.39-3.3c.365-.395.795-.494 1.058-.494.263 0 .526.01.758.02.246.013.57-.098.892.68.328.79 1.058 2.585 1.156 2.782.099.197.164.428.033.69-.131.264-.197.428-.395.658-.197.23-.414.512-.591.68-.197.185-.407.388-.184.772.223.384.992 1.643 2.133 2.658 1.474 1.31 2.685 1.714 3.078 1.91.395.198.625.165.855-.098.23-.263.987-1.152 1.25-1.546.263-.395.526-.33.888-.198.362.132 2.285 1.076 2.68 1.274.394.197.658.296.756.46.098.165.098.955-.189 1.763Z" />
+              </svg>
+            </div>
+            <div>
+              <p class="text-sm text-orange-100">Solución Inmediata</p>
+              <p class="font-bold text-xl">Atención vía WhatsApp</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:w-7/12 w-full">
+        <div class="bg-deep-blue rounded-[30px] p-8 md:p-12 shadow-2xl border border-brand-blue">
+          <h3 class="text-2xl font-bold font-display text-white mb-6">Cotiza tu Landing Page</h3>
+          <form id="whatsappForm" class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-bold text-gray-300 mb-2">Tu Nombre / Empresa</label>
+                <input type="text" id="nombre" required
+                  class="w-full bg-[#112240] border border-brand-blue/50 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 transition-all placeholder-gray-500"
+                  placeholder="Ej. Juan Pérez">
+              </div>
+              <div>
+                <label class="block text-sm font-bold text-gray-300 mb-2">¿Para quién es la Landing?</label>
+                <select id="tipo"
+                  class="w-full bg-[#112240] border border-brand-blue/50 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 transition-all appearance-none cursor-pointer">
+                  <option value="Un Negocio Local / Físico">Negocio Local / Físico</option>
+                  <option value="Mi Marca Personal o Servicios">Marca Personal / Servicios</option>
+                  <option value="Venta de un Producto">Venta de un Producto</option>
+                  <option value="Evento u Organización">Organización / Evento</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-bold text-gray-300 mb-2">¿Cuál es el objetivo principal de la Landing
+                Page?</label>
+              <textarea id="objetivo" rows="4" required
+                class="w-full bg-[#112240] border border-brand-blue/50 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-orange focus:ring-2 focus:ring-brand-orange/20 transition-all resize-none placeholder-gray-500"
+                placeholder="Ej. Quiero una página para mi consultorio dental para que la gente agenda citas directo por WhatsApp..."></textarea>
+            </div>
+
+            <button type="submit"
+              class="w-full bg-brand-blue text-white font-bold text-lg py-4 rounded-xl hover:bg-brand-blue-light transition-all flex items-center justify-center gap-3 shadow-lg shadow-blue-500/30 transform hover:-translate-y-0.5 mt-4 border border-blue-400">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+              </svg>
+              Enviar Solicitud a WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-deep-blue py-10 text-center text-sm text-gray-400 border-t border-brand-blue/30">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col items-center">
+      <div class="text-2xl font-extrabold font-display text-white flex items-center mb-6">
+        <span class="text-brand-orange font-black mr-1 text-3xl">/</span> IRIS VISUAL
+        <span class="text-xs text-brand-orange tracking-widest pl-2 uppercase font-bold">Solutions</span>
+      </div>
+      <p class="mb-2 font-medium">Creación de Landing Pages &copy; 2026. Todos los derechos reservados.</p>
+      <p>Integraciones directas a WhatsApp para tu éxito digital.</p>
+    </div>
+  </footer>
+
+  <!-- Script de lógica para WhatsApp -->
+  <script type="module" src="/main.js"></script>
+  <script>
+    document.getElementById('whatsappForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const numeroWhatsApp = '+521234567890'; // Placeholder dinámico
+
+      const nombre = document.getElementById('nombre').value;
+      const tipo = document.getElementById('tipo').value;
+      const objetivo = document.getElementById('objetivo').value;
+
+      const texto = `¡Hola Equipo de Iris Visual Solutions! 🚀💻%0A%0ASoy *${nombre}* y estoy interesado en cotizar una Landing Page para *${tipo}*.%0A%0A*Mi objetivo principal con la Landing es:*%0A"${objetivo}"%0A%0A¿Podrían brindarme asesoría sobre los planes que manejan? Quedo atento.`;
+
+      const url = `https://wa.me/${numeroWhatsApp}?text=${texto}`;
+      window.open(url, '_blank');
+    });
+  </script>
+</body>
+
+</html>
