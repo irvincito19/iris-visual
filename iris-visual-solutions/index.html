@@ -458,13 +458,20 @@
     document.getElementById('whatsappForm').addEventListener('submit', function (e) {
       e.preventDefault();
 
-      const numeroWhatsApp = '+521234567890'; // Placeholder dinámico
+      const numeroWhatsApp = '+5219515047559'; // Placeholder dinámico
 
       const nombre = document.getElementById('nombre').value;
       const tipo = document.getElementById('tipo').value;
       const objetivo = document.getElementById('objetivo').value;
-
-      const texto = `¡Hola Equipo de Iris Visual Solutions! 🚀💻%0A%0ASoy *${nombre}* y estoy interesado en cotizar una Landing Page para *${tipo}*.%0A%0A*Mi objetivo principal con la Landing es:*%0A"${objetivo}"%0A%0A¿Podrían brindarme asesoría sobre los planes que manejan? Quedo atento.`;
+     
+	const partes = [
+	  "Hola Equipo de Iris Visual Solutions",
+	  `Soy ${nombre} y estoy interesad@ en cotizar una Landing Page para: ${tipo}`,
+	  `Mi objetivo principal con la Landing es: ${objetivo}`,
+	  "Podrian brindarme asesoria sobre los planes que manejan?",
+	  "Quedo atento a su respuesta."
+	];
+      const texto = partes.join("%0A%0A");
 
       const url = `https://wa.me/${numeroWhatsApp}?text=${texto}`;
       window.open(url, '_blank');
