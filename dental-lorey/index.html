@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dental LoRey. Odontologia integral, ortodoncia y odontopediatria con atencion especializada y contacto directo por WhatsApp." />
+  <title>Dental LoRey | Sonrisas sanas para toda la familia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css" />
+  <style>
+    body {
+      font-family: 'Manrope', sans-serif;
+    }
+
+    .font-display {
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(16px);
+    }
+
+    .hero-grid {
+      background-image:
+        linear-gradient(rgba(12, 74, 110, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(12, 74, 110, 0.05) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+<a
+  id="whatsappFloatingButton"
+  href="https://wa.me/521234567890?text=Hola%2C%20quiero%20informacion%20sobre%20una%20cita%20en%20Dental%20LoRey"
+  target="_blank"
+  rel="noreferrer"
+  class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-3 rounded-full bg-emerald-500 px-5 py-3 text-sm font-bold text-white shadow-2xl shadow-emerald-500/30 transition-transform hover:scale-105"
+>
+  <span class="flex h-10 w-10 items-center justify-center rounded-full bg-white/20">
+    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M20.52 3.48A11.86 11.86 0 0012.06 0C5.5 0 .15 5.34.15 11.91c0 2.1.55 4.15 1.59 5.95L0 24l6.31-1.65a11.8 11.8 0 005.75 1.47h.01c6.56 0 11.91-5.34 11.91-11.91 0-3.18-1.24-6.16-3.46-8.43zm-8.45 18.3h-.01a9.8 9.8 0 01-4.99-1.37l-.36-.21-3.74.98 1-3.65-.24-.38a9.8 9.8 0 01-1.51-5.22C2.22 6.45 6.61 2.06 12.07 2.06c2.64 0 5.13 1.03 6.99 2.9a9.82 9.82 0 012.89 6.98c0 5.46-4.43 9.84-9.88 9.84zm5.4-7.37c-.3-.15-1.77-.87-2.05-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.95 1.16-.17.2-.35.22-.65.08-.3-.15-1.27-.47-2.42-1.5a9.1 9.1 0 01-1.68-2.07c-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.53.08-.8.38-.28.3-1.05 1.03-1.05 2.51s1.08 2.92 1.23 3.12c.15.2 2.11 3.22 5.1 4.52.71.31 1.27.5 1.7.65.72.23 1.37.2 1.89.12.58-.09 1.77-.72 2.02-1.41.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/>
+    </svg>
+  </span>
+  Agenda por WhatsApp
+</a>
+
+<header class="fixed inset-x-0 top-0 z-40 border-b border-cyan-100/80 bg-white/85 backdrop-blur-md">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
+    <a href="#inicio" class="flex items-center gap-3">
+      <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-500 to-sky-700 text-lg font-extrabold text-white shadow-lg shadow-cyan-200">
+        DL
+      </div>
+      <div>
+        <p class="font-display text-3xl font-bold leading-none text-sky-950">Dental LoRey</p>
+        <p class="text-xs font-semibold uppercase tracking-[0.35em] text-cyan-700">Especialistas dentales</p>
+      </div>
+    </a>
+
+    <nav class="hidden items-center gap-8 text-sm font-semibold text-slate-600 md:flex">
+      <a href="#servicios" class="transition-colors hover:text-sky-800">Servicios</a>
+      <a href="#especialistas" class="transition-colors hover:text-sky-800">Especialistas</a>
+      <a href="#proceso" class="transition-colors hover:text-sky-800">Proceso</a>
+      <a href="#contacto" class="transition-colors hover:text-sky-800">Contacto</a>
+    </nav>
+
+    <a
+      href="#contacto"
+      class="hidden rounded-full bg-sky-900 px-6 py-3 text-sm font-bold text-white shadow-lg shadow-sky-900/20 transition-colors hover:bg-sky-800 md:inline-flex"
+    >
+      Solicitar valoracion
+    </a>
+  </div>
+</header>
+
+<main>
+  <section id="inicio" class="hero-grid relative overflow-hidden bg-gradient-to-b from-cyan-50 via-white to-slate-50 pt-28">
+    <div class="absolute -left-24 top-24 h-72 w-72 rounded-full bg-cyan-200/40 blur-3xl"></div>
+    <div class="absolute right-0 top-12 h-96 w-96 rounded-full bg-sky-200/40 blur-3xl"></div>
+
+    <div class="mx-auto grid min-h-screen max-w-7xl items-center gap-14 px-4 py-16 md:grid-cols-2">
+      <div class="relative z-10">
+        <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-200 bg-white px-4 py-2 text-xs font-bold uppercase tracking-[0.28em] text-cyan-700 shadow-sm">
+          Odontologia integral para ninos, adolescentes y adultos
+        </div>
+
+        <h1 class="max-w-2xl font-display text-5xl font-bold leading-[0.95] text-sky-950 md:text-7xl">
+          Sonrisas cuidadas con precision, calidez y enfoque familiar.
+        </h1>
+
+        <p class="mt-7 max-w-xl text-lg leading-8 text-slate-600 md:text-xl">
+          En Dental LoRey encuentras odontologia integral, ortodoncia y odontopediatria en un mismo lugar, con atencion de
+          <span class="font-bold text-sky-900">Javier Lopez Reyes</span>, especialista en ortodoncia, y
+          <span class="font-bold text-sky-900">Katia Gonzalez Vazquez</span>, odontopediatra.
+        </p>
+
+        <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+          <a
+            href="#contacto"
+            class="inline-flex items-center justify-center rounded-full bg-emerald-500 px-8 py-4 text-base font-bold text-white shadow-xl shadow-emerald-500/25 transition-all hover:-translate-y-0.5 hover:bg-emerald-400"
+          >
+            Quiero agendar por WhatsApp
+          </a>
+          <a
+            href="#servicios"
+            class="inline-flex items-center justify-center rounded-full border border-sky-200 bg-white px-8 py-4 text-base font-bold text-sky-900 transition-colors hover:border-sky-400 hover:text-sky-700"
+          >
+            Ver tratamientos
+          </a>
+        </div>
+
+        <div class="mt-10 grid gap-4 sm:grid-cols-3">
+          <div class="glass rounded-3xl border border-white/70 p-5 shadow-lg shadow-cyan-100/60">
+            <p class="text-3xl font-extrabold text-sky-950">3</p>
+            <p class="mt-1 text-sm leading-6 text-slate-600">Areas clave para resolver la salud dental de toda la familia.</p>
+          </div>
+          <div class="glass rounded-3xl border border-white/70 p-5 shadow-lg shadow-cyan-100/60">
+            <p class="text-3xl font-extrabold text-sky-950">2</p>
+            <p class="mt-1 text-sm leading-6 text-slate-600">Especialistas enfocados en ortodoncia y atencion infantil.</p>
+          </div>
+          <div class="glass rounded-3xl border border-white/70 p-5 shadow-lg shadow-cyan-100/60">
+            <p class="text-3xl font-extrabold text-sky-950">1</p>
+            <p class="mt-1 text-sm leading-6 text-slate-600">Canal directo por WhatsApp para pedir informes y citas.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-cyan-200/40 via-sky-100/40 to-white blur-2xl"></div>
+        <div class="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white p-4 shadow-[0_30px_80px_rgba(14,116,144,0.18)]">
+          <img
+            src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80"
+            alt="Consulta dental profesional"
+            class="h-[520px] w-full rounded-[1.5rem] object-cover"
+          />
+
+          <div class="absolute bottom-8 left-8 right-8 rounded-[1.75rem] border border-white/80 bg-white/92 p-6 shadow-2xl">
+            <div class="mb-4 flex items-center justify-between gap-4">
+              <div>
+                <p class="text-sm font-bold uppercase tracking-[0.22em] text-cyan-700">Atencion personalizada</p>
+                <p class="mt-2 text-2xl font-extrabold text-sky-950">Agenda tu valoracion inicial</p>
+              </div>
+              <div class="rounded-2xl bg-emerald-50 px-4 py-3 text-right">
+                <p class="text-xs font-bold uppercase tracking-[0.2em] text-emerald-700">Lead directo</p>
+                <p class="text-lg font-extrabold text-emerald-600">WhatsApp</p>
+              </div>
+            </div>
+            <p class="text-sm leading-6 text-slate-600">
+              Resuelve dudas, pregunta por horarios y recibe seguimiento desde el primer mensaje.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-y border-cyan-100 bg-white py-6">
+    <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-6 px-4 text-center text-sm font-semibold uppercase tracking-[0.22em] text-slate-500 md:justify-between">
+      <span>Odontologia integral</span>
+      <span>Ortodoncia</span>
+      <span>Odontopediatria</span>
+      <span>Atencion cercana</span>
+      <span>Agenda por WhatsApp</span>
+    </div>
+  </section>
+
+  <section id="servicios" class="bg-slate-50 py-24">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="mx-auto max-w-3xl text-center">
+        <p class="text-sm font-bold uppercase tracking-[0.35em] text-cyan-700">Servicios</p>
+        <h2 class="mt-4 font-display text-5xl font-bold text-sky-950 md:text-6xl">
+          Tratamientos pensados para salud, funcionalidad y confianza al sonreir.
+        </h2>
+        <p class="mt-6 text-lg leading-8 text-slate-600">
+          La pagina esta construida para convertir visitas en conversaciones, por eso cada bloque empuja a una accion clara:
+          solicitar informacion o agendar una cita por WhatsApp.
+        </p>
+      </div>
+
+      <div class="mt-16 grid gap-8 lg:grid-cols-3">
+        <article class="group rounded-[2rem] border border-cyan-100 bg-white p-8 shadow-lg shadow-cyan-100/40 transition-all hover:-translate-y-1 hover:shadow-xl">
+          <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-cyan-100 text-cyan-800">
+            <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6M7 4h10a2 2 0 012 2v12a2 2 0 01-2 2H7a2 2 0 01-2-2V6a2 2 0 012-2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-extrabold text-sky-950">Odontologia integral</h3>
+          <p class="mt-4 text-base leading-7 text-slate-600">
+            Diagnostico, prevencion, limpiezas, resinas, rehabilitacion y seguimiento para mantener la salud bucal de forma completa.
+          </p>
+          <ul class="mt-6 space-y-3 text-sm leading-6 text-slate-600">
+            <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-cyan-500"></span>Valoraciones y planes de tratamiento.</li>
+            <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-cyan-500"></span>Atencion preventiva y restaurativa.</li>
+            <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-cyan-500"></span>Enfoque claro y explicaciones sencillas.</li>
+          </ul>
+        </article>
+
+        <article class="group rounded-[2rem] border border-sky-100 bg-sky-950 p-8 text-white shadow-xl shadow-sky-900/20 transition-all hover:-translate-y-1">
+          <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 text-cyan-200">
+            <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 11.5A4.5 4.5 0 0111.5 7h1A4.5 4.5 0 0117 11.5v1A4.5 4.5 0 0112.5 17h-1A4.5 4.5 0 017 12.5v-1z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 12h4"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-extrabold">Ortodoncia</h3>
+          <p class="mt-4 text-base leading-7 text-slate-200">
+            Atencion especializada para corregir posicion dental y armonizar la mordida con acompanamiento profesional en cada etapa.
+          </p>
+          <ul class="mt-6 space-y-3 text-sm leading-6 text-slate-200">
+            <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-emerald-400"></span>Valoracion ortodontica personalizada.</li>
+            <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-emerald-400"></span>Seguimiento continuo por especialista.</li>
+            <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-emerald-400"></span>Tratamientos alineados a tus objetivos.</li>
+          </ul>
+        </article>
+
+        <article class="group rounded-[2rem] border border-cyan-100 bg-white p-8 shadow-lg shadow-cyan-100/40 transition-all hover:-translate-y-1 hover:shadow-xl">
+          <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-amber-100 text-amber-700">
+            <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19a3 3 0 11-6 0m6 0a3 3 0 00-6 0m6 0h1.5A2.5 2.5 0 0019 16.5v-5A2.5 2.5 0 0016.5 9H16V7a4 4 0 10-8 0v2h-.5A2.5 2.5 0 005 11.5v5A2.5 2.5 0 007.5 19H9"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-extrabold text-sky-950">Odontopediatria</h3>
+          <p class="mt-4 text-base leading-7 text-slate-600">
+            Cuidado dental infantil con un trato amable, cercano y pensado para que cada nino viva una experiencia positiva en consulta.
+          </p>
+          <ul class="mt-6 space-y-3 text-sm leading-6 text-slate-600">
+            <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-amber-400"></span>Revision y prevencion desde edades tempranas.</li>
+            <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-amber-400"></span>Orientacion para madres y padres.</li>
+            <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-amber-400"></span>Ambiente calmado y lenguaje amigable.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="especialistas" class="bg-white py-24">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="grid gap-8 lg:grid-cols-[1.05fr_1.2fr]">
+        <div class="rounded-[2rem] bg-sky-950 p-10 text-white shadow-2xl shadow-sky-900/20">
+          <p class="text-sm font-bold uppercase tracking-[0.35em] text-cyan-300">Equipo</p>
+          <h2 class="mt-4 font-display text-5xl font-bold leading-tight">Especialistas que inspiran tranquilidad desde el primer contacto.</h2>
+          <p class="mt-6 text-lg leading-8 text-slate-200">
+            La confianza es clave en una landing medica. Por eso la pagina presenta con claridad quien atiende y que tipo de
+            cuidado puede recibir cada paciente.
+          </p>
+          <div class="mt-8 rounded-[1.5rem] border border-white/10 bg-white/5 p-6">
+            <p class="text-sm uppercase tracking-[0.25em] text-cyan-300">Objetivo de conversion</p>
+            <p class="mt-3 text-2xl font-extrabold">Llevar a cada visitante a iniciar conversacion en WhatsApp con contexto suficiente para agendar.</p>
+          </div>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2">
+          <article class="rounded-[2rem] border border-cyan-100 bg-slate-50 p-8 shadow-lg shadow-cyan-100/30">
+            <div class="mb-6 h-24 w-24 rounded-full bg-gradient-to-br from-cyan-400 to-sky-700 p-1">
+              <div class="flex h-full w-full items-center justify-center rounded-full bg-white text-3xl font-extrabold text-sky-900">JL</div>
+            </div>
+            <p class="text-sm font-bold uppercase tracking-[0.25em] text-cyan-700">Ortodoncia</p>
+            <h3 class="mt-3 text-3xl font-extrabold text-sky-950">Javier Lopez Reyes</h3>
+            <p class="mt-4 leading-7 text-slate-600">
+              Especialista en ortodoncia. Enfocado en diagnosticos claros, seguimiento cercano y soluciones orientadas a funcionalidad y estetica.
+            </p>
+          </article>
+
+          <article class="rounded-[2rem] border border-amber-100 bg-gradient-to-br from-amber-50 to-white p-8 shadow-lg shadow-amber-100/40">
+            <div class="mb-6 h-24 w-24 rounded-full bg-gradient-to-br from-amber-300 to-orange-500 p-1">
+              <div class="flex h-full w-full items-center justify-center rounded-full bg-white text-3xl font-extrabold text-orange-700">KG</div>
+            </div>
+            <p class="text-sm font-bold uppercase tracking-[0.25em] text-orange-600">Odontopediatria</p>
+            <h3 class="mt-3 text-3xl font-extrabold text-sky-950">Katia Gonzalez Vazquez</h3>
+            <p class="mt-4 leading-7 text-slate-600">
+              Odontopediatra. Brinda atencion infantil con sensibilidad, paciencia y estrategias para que cada visita sea segura y positiva.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proceso" class="bg-gradient-to-br from-cyan-50 via-white to-slate-100 py-24">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="mx-auto max-w-3xl text-center">
+        <p class="text-sm font-bold uppercase tracking-[0.35em] text-cyan-700">Proceso</p>
+        <h2 class="mt-4 font-display text-5xl font-bold text-sky-950">Una ruta simple para convertir interes en cita.</h2>
+      </div>
+
+      <div class="mt-16 grid gap-6 md:grid-cols-3">
+        <div class="rounded-[2rem] border border-white bg-white p-8 shadow-lg shadow-cyan-100/50">
+          <p class="text-5xl font-extrabold text-cyan-600">01</p>
+          <h3 class="mt-5 text-2xl font-extrabold text-sky-950">Escribes por WhatsApp</h3>
+          <p class="mt-4 leading-7 text-slate-600">Desde cualquier boton principal o el formulario. La intencion del lead llega clara y lista para seguimiento.</p>
+        </div>
+        <div class="rounded-[2rem] border border-white bg-white p-8 shadow-lg shadow-cyan-100/50">
+          <p class="text-5xl font-extrabold text-cyan-600">02</p>
+          <h3 class="mt-5 text-2xl font-extrabold text-sky-950">Recibes orientacion</h3>
+          <p class="mt-4 leading-7 text-slate-600">Se resuelven dudas sobre atencion, especialidad y disponibilidad antes de agendar.</p>
+        </div>
+        <div class="rounded-[2rem] border border-white bg-white p-8 shadow-lg shadow-cyan-100/50">
+          <p class="text-5xl font-extrabold text-cyan-600">03</p>
+          <h3 class="mt-5 text-2xl font-extrabold text-sky-950">Agenda confirmada</h3>
+          <p class="mt-4 leading-7 text-slate-600">El paciente llega con mas confianza porque ya tuvo un punto de contacto directo con el consultorio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="bg-sky-950 py-24 text-white">
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 lg:grid-cols-[0.92fr_1.08fr]">
+      <div>
+        <p class="text-sm font-bold uppercase tracking-[0.35em] text-cyan-300">Contacto</p>
+        <h2 class="mt-4 font-display text-5xl font-bold leading-tight">Empieza la conversacion y lleva este lead directo a WhatsApp.</h2>
+        <p class="mt-6 max-w-xl text-lg leading-8 text-slate-200">
+          Completa el formulario y abriremos un mensaje prellenado. Asi el equipo recibe informacion basica del paciente y puede responder mas rapido.
+        </p>
+
+        <div class="mt-10 space-y-5">
+          <div class="rounded-[1.5rem] border border-white/10 bg-white/5 p-6">
+            <p class="text-sm font-bold uppercase tracking-[0.25em] text-cyan-300">Especialidades</p>
+            <p class="mt-3 text-xl font-bold">Odontologia integral, ortodoncia y odontopediatria</p>
+          </div>
+          <div class="rounded-[1.5rem] border border-white/10 bg-white/5 p-6">
+            <p class="text-sm font-bold uppercase tracking-[0.25em] text-cyan-300">WhatsApp</p>
+            <p class="mt-3 text-xl font-bold">+52 123 456 7890</p>
+            <p class="mt-2 text-sm text-slate-300">Marcador editable. Cambialo en el script final y en el boton flotante.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-[2rem] bg-white p-8 text-slate-800 shadow-[0_30px_90px_rgba(14,116,144,0.35)] md:p-10">
+        <form id="whatsappForm" class="space-y-6">
+          <div class="grid gap-6 md:grid-cols-2">
+            <div>
+              <label for="nombre" class="mb-2 block text-sm font-bold text-slate-700">Nombre completo</label>
+              <input id="nombre" name="nombre" type="text" required class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-slate-800 transition-colors focus:border-cyan-500" placeholder="Ej. Maria Hernandez" />
+            </div>
+            <div>
+              <label for="telefono" class="mb-2 block text-sm font-bold text-slate-700">Telefono</label>
+              <input id="telefono" name="telefono" type="tel" required class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-slate-800 transition-colors focus:border-cyan-500" placeholder="Ej. 951 000 0000" />
+            </div>
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-2">
+            <div>
+              <label for="paciente" class="mb-2 block text-sm font-bold text-slate-700">Paciente</label>
+              <select id="paciente" name="paciente" class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-slate-800 transition-colors focus:border-cyan-500">
+                <option>Adulto</option>
+                <option>Nino o nina</option>
+                <option>Adolescente</option>
+              </select>
+            </div>
+            <div>
+              <label for="servicio" class="mb-2 block text-sm font-bold text-slate-700">Servicio de interes</label>
+              <select id="servicio" name="servicio" class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-slate-800 transition-colors focus:border-cyan-500">
+                <option>Odontologia integral</option>
+                <option>Ortodoncia</option>
+                <option>Odontopediatria</option>
+                <option>Quiero orientacion para saber cual necesito</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="mensaje" class="mb-2 block text-sm font-bold text-slate-700">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" class="w-full resize-none rounded-[1.5rem] border border-slate-200 bg-slate-50 px-4 py-4 text-slate-800 transition-colors focus:border-cyan-500" placeholder="Cuentanos que necesitas, si buscas valoracion, seguimiento o atencion para tu hijo o hija."></textarea>
+          </div>
+
+          <button type="submit" class="inline-flex w-full items-center justify-center rounded-full bg-emerald-500 px-6 py-4 text-base font-extrabold text-white shadow-xl shadow-emerald-500/25 transition-all hover:-translate-y-0.5 hover:bg-emerald-400">
+            Enviar solicitud a WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t border-slate-200 bg-white py-10">
+  <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 text-center text-sm text-slate-500 md:flex-row md:items-center md:justify-between md:text-left">
+    <div>
+      <p class="font-display text-3xl font-bold text-sky-950">Dental LoRey</p>
+      <p>Odontologia integral, ortodoncia y odontopediatria.</p>
+    </div>
+    <p>© 2026 Dental LoRey. Landing orientada a captacion de leads por WhatsApp.</p>
+  </div>
+</footer>
+
+<script type="module">
+const numeroWhatsApp = '521234567890'; // Cambia este numero por el real.
+
+const enlaceFlotante = document.getElementById('whatsappFloatingButton');
+if (enlaceFlotante) {
+  enlaceFlotante.href = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent('Hola, quiero informacion sobre una cita en Dental LoRey')}`;
+}
+
+document.querySelectorAll('a[href="#contacto"]').forEach((enlace) => {
+  enlace.addEventListener('click', () => {
+    const formulario = document.getElementById('whatsappForm');
+    if (formulario) {
+      setTimeout(() => formulario.querySelector('input[name="nombre"]').focus(), 400);
+    }
+  });
+});
+
+document.getElementById('whatsappForm').addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const datos = new FormData(event.currentTarget);
+  const nombre = datos.get('nombre');
+  const telefono = datos.get('telefono');
+  const paciente = datos.get('paciente');
+  const servicio = datos.get('servicio');
+  const mensaje = datos.get('mensaje') || 'Quiero mas informacion para agendar una cita.';
+
+  const texto = [
+    'Hola, quiero informacion de Dental LoRey.',
+    `Nombre: ${nombre}`,
+    `Telefono: ${telefono}`,
+    `Paciente: ${paciente}`,
+    `Servicio de interes: ${servicio}`,
+    `Mensaje: ${mensaje}`
+  ].join('\n');
+
+  const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
+  window.open(url, '_blank', 'noopener,noreferrer');
+});
+</script>
+
+</body>
+</html>
