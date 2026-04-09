@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --crema: #fbf5ea;
+  --crema-suave: #fffaf2;
+  --texto: #5d4f4a;
+  --texto-suave: #7d6c67;
+  --rosa: #d989ae;
+  --rosa-fuerte: #c56793;
+  --rosa-claro: #f7dbe6;
+  --rosa-borde: #efd7e1;
+  --verde: #5b8f74;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-display {
+  font-family: 'Marcellus', serif;
+}
+
+::selection {
+  background: rgba(197, 103, 147, 0.18);
+  color: var(--texto);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.38);
+  box-shadow: 0 0 0 3px rgba(229, 187, 204, 0.22);
+}
+
+select option {
+  color: #3d332f;
+}
