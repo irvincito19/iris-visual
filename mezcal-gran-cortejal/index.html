@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mezcal Gran Cortejal. Mezcal con identidad vibrante, enfoque artesanal y atencion directa por WhatsApp para pedidos y distribucion."
+    />
+    <title>Mezcal Gran Cortejal | Fuerza, color y tradicion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+    <style>
+      body {
+        font-family: 'Manrope', sans-serif;
+        background: #090611;
+      }
+
+      .font-display {
+        font-family: 'Bebas Neue', sans-serif;
+        letter-spacing: 0.04em;
+      }
+
+      .brand-glow {
+        text-shadow: 0 0 18px rgba(54, 224, 211, 0.18), 0 0 38px rgba(255, 97, 67, 0.12);
+      }
+
+      .hero-bg {
+        background-image:
+          radial-gradient(circle at 20% 20%, rgba(72, 54, 191, 0.4), transparent 26%),
+          radial-gradient(circle at 80% 18%, rgba(56, 221, 206, 0.22), transparent 18%),
+          radial-gradient(circle at 50% 82%, rgba(255, 112, 67, 0.22), transparent 20%),
+          linear-gradient(180deg, #090611 0%, #0d0a1e 50%, #090611 100%);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-[#090611] text-white antialiased">
+    <a
+      id="whatsappFloatingButton"
+      href="https://wa.me/521234567890?text=Hola%2C%20quiero%20informacion%20sobre%20Mezcal%20Gran%20Cortejal"
+      target="_blank"
+      rel="noreferrer"
+      class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-3 rounded-full bg-[#19b784] px-5 py-3 text-sm font-bold text-white shadow-2xl shadow-emerald-950/25 transition-transform hover:scale-105"
+    >
+      <span class="flex h-10 w-10 items-center justify-center rounded-full bg-white/20">
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.52 3.48A11.86 11.86 0 0012.06 0C5.5 0 .15 5.34.15 11.91c0 2.1.55 4.15 1.59 5.95L0 24l6.31-1.65a11.8 11.8 0 005.75 1.47h.01c6.56 0 11.91-5.34 11.91-11.91 0-3.18-1.24-6.16-3.46-8.43zm-8.45 18.3h-.01a9.8 9.8 0 01-4.99-1.37l-.36-.21-3.74.98 1-3.65-.24-.38a9.8 9.8 0 01-1.51-5.22C2.22 6.45 6.61 2.06 12.07 2.06c2.64 0 5.13 1.03 6.99 2.9a9.82 9.82 0 012.89 6.98c0 5.46-4.43 9.84-9.88 9.84zm5.4-7.37c-.3-.15-1.77-.87-2.05-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.95 1.16-.17.2-.35.22-.65.08-.3-.15-1.27-.47-2.42-1.5a9.1 9.1 0 01-1.68-2.07c-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.53.08-.8.38-.28.3-1.05 1.03-1.05 2.51s1.08 2.92 1.23 3.12c.15.2 2.11 3.22 5.1 4.52.71.31 1.27.5 1.7.65.72.23 1.37.2 1.89.12.58-.09 1.77-.72 2.02-1.41.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z" />
+        </svg>
+      </span>
+      Pedir por WhatsApp
+    </a>
+
+    <header class="fixed inset-x-0 top-0 z-40 border-b border-[#2a2358] bg-[#090611]/85 backdrop-blur-md">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
+        <a href="#inicio" class="flex items-center gap-3">
+          <div class="flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl border border-[#2a2358] bg-[#120d24] shadow-lg shadow-cyan-950/30">
+            <img
+              src="/gran-cortejal-logo.png"
+              alt="Logo de Mezcal Gran Cortejal"
+              class="h-full w-full object-cover"
+            />
+          </div>
+          <div>
+            <p class="font-display text-3xl leading-none text-white">Gran Cortejal</p>
+            <p class="text-xs font-semibold uppercase tracking-[0.35em] text-[#36e0d3]">Mezcal artesanal</p>
+          </div>
+        </a>
+
+        <nav class="hidden items-center gap-8 text-sm font-semibold text-slate-300 md:flex">
+          <a href="#esencia" class="transition-colors hover:text-[#36e0d3]">Esencia</a>
+          <a href="#mezcal" class="transition-colors hover:text-[#ffb100]">Mezcal</a>
+          <a href="#proceso" class="transition-colors hover:text-[#ff7243]">Proceso</a>
+          <a href="#pedido" class="transition-colors hover:text-[#36e0d3]">Pedido</a>
+        </nav>
+
+        <a
+          href="#pedido"
+          class="hidden rounded-full bg-[#ff7243] px-6 py-3 text-sm font-bold text-white shadow-lg shadow-orange-950/20 transition-colors hover:bg-[#ff6030] md:inline-flex"
+        >
+          Solicitar info
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero-bg relative overflow-hidden pt-28">
+        <div class="absolute left-10 top-28 h-52 w-52 rounded-full bg-[#4935c4]/35 blur-3xl"></div>
+        <div class="absolute right-8 top-24 h-60 w-60 rounded-full bg-[#27d6c6]/20 blur-3xl"></div>
+        <div class="absolute bottom-10 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-[#ff7243]/15 blur-3xl"></div>
+
+        <div class="mx-auto grid min-h-screen max-w-7xl items-center gap-14 px-4 py-16 md:grid-cols-2">
+          <div class="relative z-10">
+            <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-[#2c2560] bg-[#130f28]/80 px-4 py-2 text-xs font-bold uppercase tracking-[0.28em] text-[#36e0d3] shadow-sm">
+              Mezcal artesanal con espiritu oaxaqueno
+            </div>
+
+            <h1 class="font-display brand-glow max-w-2xl text-6xl leading-[0.9] text-white md:text-8xl">
+              Mezcal con alma, color y caracter.
+            </h1>
+
+            <p class="mt-7 max-w-xl text-lg leading-8 text-slate-300 md:text-xl">
+              Gran Cortejal es una propuesta de mezcal que combina imagen poderosa con una narrativa ligada al agave,
+              la tierra y el ritual de compartir. Aqui el visitante descubre el producto, entiende su esencia y puede pedirlo directo por WhatsApp.
+            </p>
+
+            <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+              <a
+                href="#pedido"
+                class="inline-flex items-center justify-center rounded-full bg-[#ff7243] px-8 py-4 text-base font-bold text-white shadow-xl shadow-orange-950/25 transition-all hover:-translate-y-0.5 hover:bg-[#ff6030]"
+              >
+                Quiero pedir mezcal
+              </a>
+              <a
+                href="#mezcal"
+                class="inline-flex items-center justify-center rounded-full border border-[#2a2358] bg-[#120d24] px-8 py-4 text-base font-bold text-[#36e0d3] transition-colors hover:border-[#36e0d3] hover:text-white"
+              >
+                Conocer el mezcal
+              </a>
+            </div>
+
+            <div class="mt-10 grid gap-4 sm:grid-cols-3">
+              <div class="rounded-3xl border border-[#2a2358] bg-[#120d24]/90 p-5 shadow-lg shadow-black/20">
+                <p class="text-3xl font-extrabold text-[#ffb100]">1</p>
+                <p class="mt-1 text-sm leading-6 text-slate-300">Mezcal con personalidad visual y vocacion artesanal.</p>
+              </div>
+              <div class="rounded-3xl border border-[#2a2358] bg-[#120d24]/90 p-5 shadow-lg shadow-black/20">
+                <p class="text-3xl font-extrabold text-[#36e0d3]">100%</p>
+                <p class="mt-1 text-sm leading-6 text-slate-300">Enfoque en pedidos, cotizaciones y atencion directa.</p>
+              </div>
+              <div class="rounded-3xl border border-[#2a2358] bg-[#120d24]/90 p-5 shadow-lg shadow-black/20">
+                <p class="text-3xl font-extrabold text-[#ff7243]">24/7</p>
+                <p class="mt-1 text-sm leading-6 text-slate-300">Canal listo para resolver envios, mayoreo y disponibilidad.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-[#4935c4]/30 via-[#27d6c6]/10 to-[#ff7243]/20 blur-2xl"></div>
+            <div class="relative overflow-hidden rounded-[2rem] border border-[#2a2358] bg-[#100c1f] p-4 shadow-[0_30px_90px_rgba(17,13,36,0.65)]">
+              <img
+                src="/gran-cortejal-logo.png"
+                alt="Logo de Mezcal Gran Cortejal"
+                class="h-[560px] w-full rounded-[1.5rem] object-cover"
+              />
+              <div class="absolute bottom-8 left-8 right-8 rounded-[1.75rem] border border-[#31296a] bg-[#120d24]/92 p-6 shadow-2xl backdrop-blur">
+                <p class="text-sm font-bold uppercase tracking-[0.24em] text-[#36e0d3]">Gran Cortejal</p>
+                <p class="mt-2 font-display text-4xl text-white">Un mezcal que impone presencia desde la etiqueta</p>
+                <p class="mt-3 text-sm leading-6 text-slate-300">
+                  Color, fuego y energia visual para presentar un destilado que se siente ceremonial, festivo y autentico.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-y border-[#221b48] bg-[#0d0a1e] py-6">
+        <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-6 px-4 text-center text-sm font-semibold uppercase tracking-[0.22em] text-slate-400 md:justify-between">
+          <span>Mezcal artesanal</span>
+          <span>Marca vibrante</span>
+          <span>Pedidos directos</span>
+          <span>Atencion por WhatsApp</span>
+          <span>Mayoreo disponible</span>
+        </div>
+      </section>
+
+      <section id="esencia" class="bg-[#090611] py-24">
+        <div class="mx-auto max-w-7xl px-4">
+          <div class="mx-auto max-w-3xl text-center">
+            <p class="text-sm font-bold uppercase tracking-[0.35em] text-[#36e0d3]">Esencia del mezcal</p>
+            <h2 class="mt-4 font-display text-5xl text-white md:text-7xl">
+              Un mezcal que entra por los ojos y se queda por su historia.
+            </h2>
+            <p class="mt-6 text-lg leading-8 text-slate-300">
+              Gran Cortejal comunica la fuerza del mezcal desde su universo visual, pero el contenido ahora acompana esa imagen
+              con referencias al origen artesanal, la experiencia al beberlo y la forma de pedirlo.
+            </p>
+          </div>
+
+          <div class="mt-16 grid gap-8 lg:grid-cols-3">
+            <article class="rounded-[2rem] border border-[#2a2358] bg-[#120d24] p-8 shadow-lg shadow-black/30 transition-all hover:-translate-y-1 hover:border-[#36e0d3]">
+              <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#241d4f] text-[#36e0d3]">
+                <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3l2.8 5.67 6.26.91-4.53 4.42 1.07 6.25L12 17.77l-5.6 2.48 1.07-6.25L2.94 9.58l6.26-.91L12 3z"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-extrabold text-white">Origen con presencia</h3>
+              <p class="mt-4 text-base leading-7 text-slate-300">
+                La propuesta visual dialoga con el mezcal como bebida de raiz oaxaquena: intensa, ritual y profundamente ligada a la tierra.
+              </p>
+            </article>
+
+            <article class="rounded-[2rem] border border-[#2a2358] bg-[#120d24] p-8 shadow-lg shadow-black/30 transition-all hover:-translate-y-1 hover:border-[#ff7243]">
+              <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#2f1940] text-[#ff7243]">
+                <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 8h10M7 12h10M7 16h6"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-extrabold text-white">Perfil para compartir</h3>
+              <p class="mt-4 text-base leading-7 text-slate-300">
+                El copy invita a pensar en sobremesas, regalos, reuniones, celebraciones y momentos donde un buen mezcal cobra sentido.
+              </p>
+            </article>
+
+            <article class="rounded-[2rem] border border-[#2a2358] bg-[#120d24] p-8 shadow-lg shadow-black/30 transition-all hover:-translate-y-1 hover:border-[#ffb100]">
+              <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#362508] text-[#ffb100]">
+                <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v12m6-6H6"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-extrabold text-white">Pedido sin friccion</h3>
+              <p class="mt-4 text-base leading-7 text-slate-300">
+                El formulario envia al chat de WhatsApp con contexto para botellas, eventos, regalos, mayoreo o distribucion.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="mezcal" class="bg-[#0d0a1e] py-24">
+        <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 lg:grid-cols-[1fr_1.05fr]">
+          <div class="relative">
+            <div class="absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-[#36e0d3]/15 via-transparent to-[#4935c4]/25 blur-2xl"></div>
+            <img
+              src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?auto=format&fit=crop&w=1200&q=80"
+              alt="Presentacion de mezcal"
+              class="relative h-[540px] w-full rounded-[2rem] border border-[#2a2358] object-cover shadow-2xl shadow-black/40"
+            />
+          </div>
+
+          <div>
+            <p class="text-sm font-bold uppercase tracking-[0.35em] text-[#ffb100]">Presentacion</p>
+            <h2 class="mt-4 font-display text-5xl text-white md:text-7xl">Gran Cortejal Joven</h2>
+            <p class="mt-6 text-lg leading-8 text-slate-300">
+              Un mezcal joven pensado para quienes buscan notas vivas, presencia ahumada equilibrada y una experiencia que combine tradicion,
+              energia y una imagen fuera de lo comun.
+            </p>
+
+            <ul class="mt-8 space-y-4 text-sm leading-7 text-slate-300">
+              <li class="flex items-start gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-[#36e0d3]"></span>Notas pensadas para disfrutarse solo, en brindis o en experiencias de degustacion.</li>
+              <li class="flex items-start gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-[#ff7243]"></span>Ideal para pedidos individuales, regalos especiales, eventos y barras de mezcal.</li>
+              <li class="flex items-start gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-[#ffb100]"></span>Presentacion llamativa para anaquel, contenido social y venta directa.</li>
+            </ul>
+
+            <div class="mt-10 grid gap-4 sm:grid-cols-3">
+              <div class="rounded-3xl border border-[#2a2358] bg-[#120d24] p-5">
+                <p class="text-xs font-bold uppercase tracking-[0.24em] text-[#36e0d3]">Tipo</p>
+                <p class="mt-2 text-lg font-extrabold text-white">Joven</p>
+              </div>
+              <div class="rounded-3xl border border-[#2a2358] bg-[#120d24] p-5">
+                <p class="text-xs font-bold uppercase tracking-[0.24em] text-[#ff7243]">Formato</p>
+                <p class="mt-2 text-lg font-extrabold text-white">750 ml</p>
+              </div>
+              <div class="rounded-3xl border border-[#2a2358] bg-[#120d24] p-5">
+                <p class="text-xs font-bold uppercase tracking-[0.24em] text-[#ffb100]">Perfil</p>
+                <p class="mt-2 text-lg font-extrabold text-white">Artesanal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="proceso" class="bg-[#090611] py-24">
+        <div class="mx-auto max-w-7xl px-4">
+          <div class="mx-auto max-w-3xl text-center">
+            <p class="text-sm font-bold uppercase tracking-[0.35em] text-[#36e0d3]">Proceso</p>
+            <h2 class="mt-4 font-display text-5xl text-white md:text-7xl">Del agave al brindis: una ruta clara para comprar.</h2>
+          </div>
+
+          <div class="mt-16 grid gap-6 md:grid-cols-3">
+            <div class="rounded-[2rem] border border-[#2a2358] bg-[#120d24] p-8 shadow-lg shadow-black/30">
+              <p class="text-5xl font-extrabold text-[#36e0d3]">01</p>
+              <h3 class="mt-5 text-2xl font-extrabold text-white">Conocen el mezcal</h3>
+              <p class="mt-4 leading-7 text-slate-300">El visitante entiende que se trata de una propuesta artesanal con imagen fuerte y vocacion de compartir.</p>
+            </div>
+            <div class="rounded-[2rem] border border-[#2a2358] bg-[#120d24] p-8 shadow-lg shadow-black/30">
+              <p class="text-5xl font-extrabold text-[#ff7243]">02</p>
+              <h3 class="mt-5 text-2xl font-extrabold text-white">Piden detalles</h3>
+              <p class="mt-4 leading-7 text-slate-300">Escriben por WhatsApp para conocer precio, existencia, envios, cajas, regalos o compras para eventos.</p>
+            </div>
+            <div class="rounded-[2rem] border border-[#2a2358] bg-[#120d24] p-8 shadow-lg shadow-black/30">
+              <p class="text-5xl font-extrabold text-[#ffb100]">03</p>
+              <h3 class="mt-5 text-2xl font-extrabold text-white">Se cierra el pedido</h3>
+              <p class="mt-4 leading-7 text-slate-300">El lead llega con contexto suficiente para avanzar rapido en botellas individuales, mayoreo o distribucion.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pedido" class="bg-[linear-gradient(180deg,#0d0a1e_0%,#120d24_100%)] py-24">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 lg:grid-cols-[0.9fr_1.1fr]">
+          <div>
+            <p class="text-sm font-bold uppercase tracking-[0.35em] text-[#36e0d3]">Pedido</p>
+            <h2 class="mt-4 font-display text-5xl text-white">Pide tu mezcal y recibe atencion directa.</h2>
+            <p class="mt-6 max-w-xl text-lg leading-8 text-slate-300">
+              Completa el formulario para abrir un mensaje prellenado con los datos clave de tu pedido. Ideal para botellas,
+              regalos, eventos, mayoreo o puntos de venta.
+            </p>
+
+            <div class="mt-10 space-y-5">
+              <div class="rounded-[1.5rem] border border-[#2a2358] bg-[#120d24] p-6">
+                <p class="text-sm font-bold uppercase tracking-[0.25em] text-[#36e0d3]">Canal principal</p>
+                <p class="mt-3 text-xl font-bold text-white">Pedidos y cotizaciones por WhatsApp</p>
+              </div>
+              <div class="rounded-[1.5rem] border border-[#2a2358] bg-[#120d24] p-6">
+                <p class="text-sm font-bold uppercase tracking-[0.25em] text-[#ffb100]">WhatsApp</p>
+                <p class="mt-3 text-xl font-bold text-white">+52 123 456 7890</p>
+                <p class="mt-2 text-sm text-slate-400">Marcador editable. Cambialo en el script final y en el boton flotante.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-[2rem] border border-[#2a2358] bg-[#130f28] p-8 shadow-[0_30px_90px_rgba(0,0,0,0.45)] md:p-10">
+            <form id="whatsappForm" class="space-y-6">
+              <div class="grid gap-6 md:grid-cols-2">
+                <div>
+                  <label for="nombre" class="mb-2 block text-sm font-bold text-slate-200">Nombre</label>
+                  <input
+                    id="nombre"
+                    name="nombre"
+                    type="text"
+                    required
+                    class="w-full rounded-2xl border border-[#2a2358] bg-[#0e0a1d] px-4 py-4 text-white transition-colors focus:border-[#36e0d3]"
+                    placeholder="Ej. Carlos Reyes"
+                  />
+                </div>
+                <div>
+                  <label for="telefono" class="mb-2 block text-sm font-bold text-slate-200">Telefono</label>
+                  <input
+                    id="telefono"
+                    name="telefono"
+                    type="tel"
+                    required
+                    class="w-full rounded-2xl border border-[#2a2358] bg-[#0e0a1d] px-4 py-4 text-white transition-colors focus:border-[#36e0d3]"
+                    placeholder="Ej. 951 000 0000"
+                  />
+                </div>
+              </div>
+
+              <div class="grid gap-6 md:grid-cols-2">
+                <div>
+                  <label for="interes" class="mb-2 block text-sm font-bold text-slate-200">Me interesa</label>
+                  <select
+                    id="interes"
+                    name="interes"
+                    class="w-full rounded-2xl border border-[#2a2358] bg-[#0e0a1d] px-4 py-4 text-white transition-colors focus:border-[#ff7243]"
+                  >
+                    <option>Compra de botellas</option>
+                    <option>Pedido para evento</option>
+                    <option>Mayoreo o distribucion</option>
+                    <option>Quiero conocer mas del mezcal</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="cantidad" class="mb-2 block text-sm font-bold text-slate-200">Cantidad estimada</label>
+                  <select
+                    id="cantidad"
+                    name="cantidad"
+                    class="w-full rounded-2xl border border-[#2a2358] bg-[#0e0a1d] px-4 py-4 text-white transition-colors focus:border-[#ff7243]"
+                  >
+                    <option>1 a 3 botellas</option>
+                    <option>4 a 12 botellas</option>
+                    <option>Mas de 12 botellas</option>
+                    <option>Quiero cotizar primero</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="mensaje" class="mb-2 block text-sm font-bold text-slate-200">Mensaje</label>
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  rows="5"
+                  class="w-full resize-none rounded-[1.5rem] border border-[#2a2358] bg-[#0e0a1d] px-4 py-4 text-white transition-colors focus:border-[#ffb100]"
+                  placeholder="Cuentanos si buscas precio, envio, botellas para evento, regalo o distribucion."
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="inline-flex w-full items-center justify-center rounded-full bg-[#ff7243] px-6 py-4 text-base font-extrabold text-white shadow-xl shadow-orange-950/20 transition-all hover:-translate-y-0.5 hover:bg-[#ff6030]"
+              >
+                Enviar solicitud a WhatsApp
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-[#221b48] bg-[#090611] py-10">
+      <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 text-center text-sm text-slate-500 md:flex-row md:items-center md:justify-between md:text-left">
+        <div>
+          <p class="font-display text-3xl text-white">Gran Cortejal</p>
+          <p>Mezcal artesanal con pedidos, mayoreo y contacto directo.</p>
+        </div>
+        <p>© 2026 Mezcal Gran Cortejal. Todos los derechos reservados. Evita el exceso.</p>
+      </div>
+    </footer>
+
+    <script type="module">
+      const numeroWhatsApp = '521234567890'; // Cambia este numero por el real.
+
+      const enlaceFlotante = document.getElementById('whatsappFloatingButton');
+      if (enlaceFlotante) {
+        enlaceFlotante.href = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent('Hola, quiero informacion sobre Mezcal Gran Cortejal')}`;
+      }
+
+      document.querySelectorAll('a[href="#pedido"]').forEach((enlace) => {
+        enlace.addEventListener('click', () => {
+          const formulario = document.getElementById('whatsappForm');
+          if (formulario) {
+            setTimeout(() => formulario.querySelector('input[name="nombre"]').focus(), 400);
+          }
+        });
+      });
+
+      document.getElementById('whatsappForm').addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const datos = new FormData(event.currentTarget);
+        const nombre = datos.get('nombre');
+        const telefono = datos.get('telefono');
+        const interes = datos.get('interes');
+        const cantidad = datos.get('cantidad');
+        const mensaje = datos.get('mensaje') || 'Quiero informacion sobre el mezcal, precio y disponibilidad.';
+
+        const texto = [
+          'Hola, quiero informacion de Mezcal Gran Cortejal.',
+          `Nombre: ${nombre}`,
+          `Telefono: ${telefono}`,
+          `Interes: ${interes}`,
+          `Cantidad estimada: ${cantidad}`,
+          `Mensaje: ${mensaje}`
+        ].join('\n');
+
+        const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
+        window.open(url, '_blank', 'noopener,noreferrer');
+      });
+    </script>
+  </body>
+</html>
