@@ -1,198 +1,300 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Mezcal Artesanal Admirable. Elegancia y tradición en cada gota." />
-    <title>Mezcal Admirable | Tradición y Elegancia</title>
-    <!-- Google Fonts: Playfair Display para títulos elegantes, e Inter para texto -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-      }
-      h1, h2, h3, .font-elegant {
-        font-family: 'Playfair Display', serif;
-      }
-      .bg-hex {
-        background-color: #0a0a0a;
-      }
-      .gold-accent {
-        color: #d4af37; /* Dorado clásico */
-      }
-      .gold-bg {
-        background-color: #d4af37;
-        color: #0a0a0a;
-      }
-      .gold-bg:hover {
-        background-color: #f1c40f;
-      }
-      .gold-border {
-        border-color: #d4af37;
-      }
-    </style>
-  </head>
-  <body class="bg-hex text-gray-300 min-h-screen flex flex-col">
-    <!-- Navbar -->
-    <header class="fixed w-full top-0 z-50 bg-black/80 backdrop-blur-md border-b gold-border/20">
-      <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <div class="text-2xl font-bold font-elegant gold-accent tracking-widest">
-          ADMIRABLE
-        </div>
-        <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
-          <a href="#proceso" class="hover:gold-accent transition-colors">El Proceso</a>
-          <a href="#productos" class="hover:gold-accent transition-colors">Colección</a>
-          <a href="#pedido" class="hover:gold-accent transition-colors">Hacer Pedido</a>
-        </nav>
-        <a href="#pedido" class="gold-bg px-5 py-2 rounded-sm font-semibold uppercase tracking-wider text-xs transition-colors">
-          Ordenar
-        </a>
-      </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-      <!-- Background Image with Overlay -->
-      <div class="absolute inset-0 z-0">
-        <img src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Mezcal elegante" class="w-full h-full object-cover opacity-30" />
-        <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-black/50 to-black/80"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mezcal Artesanal Admirable. Elegancia y tradición en cada gota." />
+  <title>Mezcal Admirable | Tradición y Elegancia</title>
+  <!-- Google Fonts: Playfair Display para títulos elegantes, e Inter para texto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg-parchment: #E2D1B9;
+      /* Tono crema más oscuro y antiguo */
+      --accent-dark-brown: #1B0F0D;
+      /* Café mucho más oscuro como se solicitó */
+      --text-black: #0D0D0D;
+      /* Negro profundo */
+      --text-muted: #2C1810;
+      /* Café muy oscuro para el texto secundario */
+      --section-dark: #0F0E0D;
+      /* Fondo casi negro para secciones oscuras */
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-parchment);
+      color: var(--text-black);
+    }
+
+    h1,
+    h2,
+    h3,
+    .font-elegant {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .bg-parchment {
+      background-color: var(--bg-parchment);
+    }
+
+    .accent-text {
+      color: var(--accent-dark-brown);
+    }
+
+    .accent-bg {
+      background-color: var(--accent-dark-brown);
+      color: white;
+    }
+
+    .accent-bg:hover {
+      background-color: #2D1B18;
+    }
+
+    .accent-border {
+      border-color: var(--accent-dark-brown);
+    }
+
+    .text-black {
+      color: var(--text-black);
+    }
+
+    /* Estilo de doble línea del diseño */
+    .double-line-title {
+      position: relative;
+      display: inline-block;
+      padding: 12px 0;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .double-line-title::before,
+    .double-line-title::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      border-top: 1px solid var(--text-black);
+      border-bottom: 1px solid var(--text-black);
+    }
+
+    .double-line-title::before {
+      top: 0;
+    }
+
+    .double-line-title::after {
+      bottom: 0;
+    }
+  </style>
+</head>
+
+<body class="bg-parchment text-[var(--text-black)] min-h-screen flex flex-col">
+  <!-- Navbar -->
+  <header class="fixed w-full top-0 z-50 bg-[var(--bg-parchment)] border-b border-black/5">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold font-elegant text-black tracking-[0.2em] md:tracking-[0.5em]">
+        ADMIRABLE
       </div>
-      
-      <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-10">
-        <span class="gold-accent uppercase tracking-[0.3em] text-sm mb-4 block">100% Agave Espadín</span>
-        <h1 class="text-5xl md:text-7xl font-bold font-elegant text-white mb-6 leading-tight drop-shadow-lg">
-          La Excelencia del <br><i class="gold-accent">Mezcal Artesanal</i>
-        </h1>
-        <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto font-light">
-          Descubre el balance perfecto entre herencia oaxaqueña y sofisticación. Una experiencia diseñada para paladares exigentes.
+      <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider font-semibold">
+        <a href="#proceso" class="hover:accent-text transition-colors">El Proceso</a>
+        <a href="#productos" class="hover:accent-text transition-colors">Colección</a>
+        <a href="#pedido" class="hover:accent-text transition-colors">Hacer Pedido</a>
+      </nav>
+      <a href="#pedido"
+        class="accent-bg px-5 py-2 rounded-sm font-semibold uppercase tracking-wider text-xs transition-colors shadow-md">
+        Ordenar
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <!-- Background Image with Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img
+        src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+        alt="Mezcal artesanal" class="w-full h-full object-cover opacity-60" />
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-[var(--bg-parchment)]/20 via-[var(--bg-parchment)]/40 to-[var(--bg-parchment)]">
+      </div>
+    </div>
+
+    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-10">
+      <span class="accent-text uppercase tracking-[0.3em] text-sm mb-4 block font-bold">100% Agave Espadín</span>
+      <h1 class="text-5xl md:text-7xl font-bold font-elegant mb-6 leading-tight">
+        Vive una <br><span class="double-line-title my-4">experiencia</span> <br><i class="accent-text">admirable</i>
+      </h1>
+      <p class="text-lg md:text-xl text-[var(--text-muted)] mb-10 max-w-2xl mx-auto font-medium">
+        Descubre el balance perfecto entre herencia oaxaqueña y sofisticación. Una experiencia diseñada para paladares
+        exigentes.
+      </p>
+      <a href="#pedido"
+        class="inline-block accent-bg px-8 py-4 uppercase tracking-widest font-semibold transition-transform transform hover:scale-105 shadow-xl">
+        Adquirir Ahora
+      </a>
+    </div>
+  </section>
+
+  <!-- Proceso -->
+  <section id="proceso" class="py-24 bg-white/50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-elegant mb-4">Arte & Tradición</h2>
+        <div class="w-24 h-1 accent-bg mx-auto mb-6"></div>
+        <p class="text-[var(--text-muted)] max-w-2xl mx-auto font-medium">Seleccionamos cuidadosamente nuestros agaves,
+          respetando los tiempos de la tierra para lograr una destilación de calidad premium.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-12">
+        <!-- Paso 1 -->
+        <div class="text-center group">
+          <div
+            class="w-16 h-16 mx-auto accent-border border-2 rounded-full flex items-center justify-center text-2xl accent-text font-elegant mb-6 group-hover:accent-bg group-hover:text-white transition-colors">
+            1</div>
+          <h3 class="text-2xl font-elegant mb-3">La Jima</h3>
+          <p class="text-[var(--text-muted)] font-medium text-sm leading-relaxed">Solo los agaves maduros, que han
+            absorbido el sol por más de 8 años, son cortados para nuestro destilado.</p>
+        </div>
+        <!-- Paso 2 -->
+        <div class="text-center group">
+          <div
+            class="w-16 h-16 mx-auto accent-border border-2 rounded-full flex items-center justify-center text-2xl accent-text font-elegant mb-6 group-hover:accent-bg group-hover:text-white transition-colors">
+            2</div>
+          <h3 class="text-2xl font-elegant mb-3">Cocción</h3>
+          <p class="text-[var(--text-muted)] font-medium text-sm leading-relaxed">Horno cónico de tierra y maderas
+            selectas que otorgan ese toque ahumado sutil y característico.</p>
+        </div>
+        <!-- Paso 3 -->
+        <div class="text-center group">
+          <div
+            class="w-16 h-16 mx-auto accent-border border-2 rounded-full flex items-center justify-center text-2xl accent-text font-elegant mb-6 group-hover:accent-bg group-hover:text-white transition-colors">
+            3</div>
+          <h3 class="text-2xl font-elegant mb-3">Doble Destilación</h3>
+          <p class="text-[var(--text-muted)] font-medium text-sm leading-relaxed">Destilado en alambique de cobre para
+            asegurar la pureza, retener aromas y lograr una suavidad incomparable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Productos -->
+  <section id="productos" class="py-24 bg-[var(--bg-parchment)]">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+      <div class="md:w-1/2">
+        <div class="relative">
+          <div
+            class="absolute inset-0 bg-[var(--accent-terracotta)]/10 rounded-lg transform translate-x-4 translate-y-4 -z-10">
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1608885898957-a559228e8749?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Botella de Mezcal Admirable" class="rounded-lg shadow-xl w-full object-cover h-[500px]" />
+        </div>
+      </div>
+      <div class="md:w-1/2">
+        <span class="accent-text uppercase tracking-[0.2em] text-sm mb-2 block font-bold">Presentación</span>
+        <h2 class="text-4xl md:text-5xl font-elegant mb-6">Admirable Joven</h2>
+        <p class="text-[var(--text-muted)] mb-6 leading-relaxed font-medium">
+          Nuestra presentación insignia. Un mezcal joven, radiante y cristalino, con profundas notas herbales y un sutil
+          regusto cítrico que evoluciona en el paladar.
         </p>
-        <a href="#pedido" class="inline-block gold-bg px-8 py-4 uppercase tracking-widest font-semibold transition-transform transform hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.3)]">
-          Adquirir Ahora
-        </a>
-      </div>
-    </section>
-
-    <!-- Proceso -->
-    <section id="proceso" class="py-24 bg-[#0d0d0d]">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-5xl font-elegant text-white mb-4">Arte & Tradición</h2>
-          <div class="w-24 h-1 gold-bg mx-auto mb-6"></div>
-          <p class="text-gray-400 max-w-2xl mx-auto">Seleccionamos cuidadosamente nuestros agaves, respetando los tiempos de la tierra para lograr una destilación de calidad premium.</p>
-        </div>
-        
-        <div class="grid md:grid-cols-3 gap-12">
-          <!-- Paso 1 -->
-          <div class="text-center group">
-            <div class="w-16 h-16 mx-auto gold-border border rounded-full flex items-center justify-center text-2xl gold-accent font-elegant mb-6 group-hover:bg-[#d4af37] group-hover:text-black transition-colors">1</div>
-            <h3 class="text-2xl font-elegant text-white mb-3">La Jima</h3>
-            <p class="text-gray-500 font-light text-sm leading-relaxed">Solo los agaves maduros, que han absorbido el sol por más de 8 años, son cortados para nuestro destilado.</p>
-          </div>
-          <!-- Paso 2 -->
-          <div class="text-center group">
-            <div class="w-16 h-16 mx-auto gold-border border rounded-full flex items-center justify-center text-2xl gold-accent font-elegant mb-6 group-hover:bg-[#d4af37] group-hover:text-black transition-colors">2</div>
-            <h3 class="text-2xl font-elegant text-white mb-3">Cocción</h3>
-            <p class="text-gray-500 font-light text-sm leading-relaxed">Horno cónico de tierra y maderas selectas que otorgan ese toque ahumado sutil y característico.</p>
-          </div>
-          <!-- Paso 3 -->
-          <div class="text-center group">
-            <div class="w-16 h-16 mx-auto gold-border border rounded-full flex items-center justify-center text-2xl gold-accent font-elegant mb-6 group-hover:bg-[#d4af37] group-hover:text-black transition-colors">3</div>
-            <h3 class="text-2xl font-elegant text-white mb-3">Doble Destilación</h3>
-            <p class="text-gray-500 font-light text-sm leading-relaxed">Destilado en alambique de cobre para asegurar la pureza, retener aromas y lograr una suavidad incomparable.</p>
-          </div>
+        <ul class="text-sm text-[var(--text-coffee)] space-y-3 mb-8">
+          <li class="flex items-center"><span class="accent-text mr-3">◆</span> Agave: Espadín (Angustifolia Haw)</li>
+          <li class="flex items-center"><span class="accent-text mr-3">◆</span> Origen: Oaxaca, México</li>
+          <li class="flex items-center"><span class="accent-text mr-3">◆</span> Riqueza Alcohólica: 45% Alc. Vol.</li>
+          <li class="flex items-center"><span class="accent-text mr-3">◆</span> Volumen: 750ml</li>
+        </ul>
+        <div class="text-3xl font-elegant mb-8">$850 <span class="text-sm text-[var(--text-muted)] font-sans">MXN</span>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Productos -->
-    <section id="productos" class="py-24 bg-[#0a0a0a]">
-      <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
-        <div class="md:w-1/2">
-          <img src="https://images.unsplash.com/photo-1608885898957-a559228e8749?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Botella de Mezcal Admirable" class="rounded-lg shadow-2xl opacity-80 hover:opacity-100 transition-opacity grayscale hover:grayscale-0 duration-500 w-full object-cover h-[500px]" />
-        </div>
-        <div class="md:w-1/2">
-          <span class="gold-accent uppercase tracking-[0.2em] text-sm mb-2 block">Presentación</span>
-          <h2 class="text-4xl md:text-5xl font-elegant text-white mb-6">Admirable Joven</h2>
-          <p class="text-gray-400 mb-6 leading-relaxed font-light">
-            Nuestra presentación insignia. Un mezcal joven, radiante y cristalino, con profundas notas herbales y un sutil regusto cítrico que evoluciona en el paladar. 
-          </p>
-          <ul class="text-sm text-gray-500 space-y-3 mb-8">
-            <li class="flex items-center"><span class="gold-accent mr-3">◆</span> Agave: Espadín (Angustifolia Haw)</li>
-            <li class="flex items-center"><span class="gold-accent mr-3">◆</span> Origen: Oaxaca, México</li>
-            <li class="flex items-center"><span class="gold-accent mr-3">◆</span> Riqueza Alcohólica: 45% Alc. Vol.</li>
-            <li class="flex items-center"><span class="gold-accent mr-3">◆</span> Volumen: 750ml</li>
-          </ul>
-          <div class="text-3xl font-elegant text-white mb-8">$850 <span class="text-sm text-gray-500 font-sans">MXN</span></div>
-        </div>
+  <!-- Contacto / Pedidos -->
+  <section id="pedido" class="py-24 bg-[var(--section-dark)] text-white relative">
+    <div class="max-w-3xl mx-auto px-4 relative z-10">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-elegant mb-4 accent-text">Haz tu Pedido</h2>
+        <p class="text-gray-300 font-light">Completa la información para contactarnos directamente por WhatsApp.</p>
       </div>
-    </section>
 
-    <!-- Contacto / Pedidos -->
-    <section id="pedido" class="py-24 bg-[#111] relative border-t-2 gold-border/20">
-      <div class="max-w-3xl mx-auto px-4 relative z-10">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-elegant text-white mb-4">Haz tu Pedido</h2>
-          <p class="text-gray-400">Completa la información para contactarnos directamente por WhatsApp.</p>
+      <form id="whatsappForm" class="bg-white/10 backdrop-blur-sm p-8 rounded-lg shadow-2xl border border-white/10">
+        <div class="mb-6">
+          <label for="nombre" class="block text-sm text-gray-300 uppercase tracking-widest mb-2 font-bold">Nombre
+            completo</label>
+          <input type="text" id="nombre" required
+            class="w-full bg-white/10 border border-white/20 rounded p-3 text-white focus:outline-none focus:border-[var(--accent-terracotta)] transition-colors"
+            placeholder="Tu nombre">
         </div>
-        
-        <form id="whatsappForm" class="bg-[#1a1a1a] p-8 rounded-lg shadow-2xl border border-gray-800">
-          <div class="mb-6">
-            <label for="nombre" class="block text-sm text-gray-400 uppercase tracking-widest mb-2">Nombre completo</label>
-            <input type="text" id="nombre" required class="w-full bg-[#0d0d0d] border border-gray-700 rounded p-3 text-white focus:outline-none focus:border-[#d4af37] transition-colors" placeholder="Tu nombre">
-          </div>
-          
-          <div class="grid grid-cols-2 gap-6 mb-6">
-            <div>
-              <label for="cantidad" class="block text-sm text-gray-400 uppercase tracking-widest mb-2">Cantidad (Botellas)</label>
-              <input type="number" id="cantidad" min="1" value="1" required class="w-full bg-[#0d0d0d] border border-gray-700 rounded p-3 text-white focus:outline-none focus:border-[#d4af37] transition-colors">
-            </div>
-            <div>
-              <label for="ciudad" class="block text-sm text-gray-400 uppercase tracking-widest mb-2">Ciudad de Envío</label>
-              <input type="text" id="ciudad" required class="w-full bg-[#0d0d0d] border border-gray-700 rounded p-3 text-white focus:outline-none focus:border-[#d4af37] transition-colors" placeholder="Ej. Ciudad de México">
-            </div>
-          </div>
-          
-          <div class="mb-8">
-            <label for="mensaje" class="block text-sm text-gray-400 uppercase tracking-widest mb-2">Mensaje Adicional</label>
-            <textarea id="mensaje" rows="3" class="w-full bg-[#0d0d0d] border border-gray-700 rounded p-3 text-white focus:outline-none focus:border-[#d4af37] transition-colors" placeholder="¿Algún detalle especial?"></textarea>
-          </div>
-          
-          <button type="submit" class="w-full gold-bg text-black font-bold uppercase tracking-widest py-4 rounded hover:bg-[#f1c40f] transition-all flex items-center justify-center gap-3">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-            Enviar a WhatsApp
-          </button>
-        </form>
-      </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-black py-8 border-t border-gray-800 text-center text-sm text-gray-600">
-      <div class="max-w-6xl mx-auto px-4">
-        <p class="mb-2 font-elegant text-gray-400">ADMIRABLE MEZCAL</p>
-        <p>&copy; 2026 Iris Visual. Todos los derechos reservados. Evita el exceso.</p>
-      </div>
-    </footer>
+        <div class="grid grid-cols-2 gap-6 mb-6">
+          <div>
+            <label for="cantidad" class="block text-sm text-gray-300 uppercase tracking-widest mb-2 font-bold">Cantidad
+              (Botellas)</label>
+            <input type="number" id="cantidad" min="1" value="1" required
+              class="w-full bg-white/10 border border-white/20 rounded p-3 text-white focus:outline-none focus:border-[var(--accent-terracotta)] transition-colors">
+          </div>
+          <div>
+            <label for="ciudad" class="block text-sm text-gray-300 uppercase tracking-widest mb-2 font-bold">Ciudad de
+              Envío</label>
+            <input type="text" id="ciudad" required
+              class="w-full bg-white/10 border border-white/20 rounded p-3 text-white focus:outline-none focus:border-[var(--accent-terracotta)] transition-colors"
+              placeholder="Ej. Ciudad de México">
+          </div>
+        </div>
 
-    <!-- Script de lógica para WhatsApp -->
-    <script type="module" src="/main.js"></script>
-    <script>
-      document.getElementById('whatsappForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const numeroWhatsApp = '+521234567890'; // Marcador que el usuario podrá cambiar fácilmente
-        
-        const nombre = document.getElementById('nombre').value;
-        const cantidad = document.getElementById('cantidad').value;
-        const ciudad = document.getElementById('ciudad').value;
-        const mensaje = document.getElementById('mensaje').value;
-        
-        const texto = `Hola, me interesa el Mezcal Admirable.%0A%0A*Mi nombre:* ${nombre}%0A*Cantidad:* ${cantidad} botella(s)%0A*Ciudad:* ${ciudad}%0A*Mensaje:* ${mensaje || 'Sin detalles extra'}.%0A%0A¿Me podrían dar más información sobre el pago y envío?`;
-        
-        const url = `https://wa.me/${numeroWhatsApp}?text=${texto}`;
-        window.open(url, '_blank');
-      });
-    </script>
-  </body>
+        <div class="mb-8">
+          <label for="mensaje" class="block text-sm text-gray-300 uppercase tracking-widest mb-2 font-bold">Mensaje
+            Adicional</label>
+          <textarea id="mensaje" rows="3"
+            class="w-full bg-white/10 border border-white/20 rounded p-3 text-white focus:outline-none focus:border-[var(--accent-terracotta)] transition-colors"
+            placeholder="¿Algún detalle especial?"></textarea>
+        </div>
+
+        <button type="submit"
+          class="w-full accent-bg py-4 rounded font-bold uppercase tracking-widest transition-all flex items-center justify-center gap-3 shadow-lg">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+          </svg>
+          Enviar a WhatsApp
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[var(--section-dark)] py-8 border-t border-white/5 text-center text-sm text-white/70">
+    <div class="max-w-6xl mx-auto px-4">
+      <p class="mb-2 font-elegant accent-text uppercase tracking-widest text-lg">ADMIRABLE MEZCAL</p>
+      <p>&copy; 2026 Iris Visual. Todos los derechos reservados. Evita el exceso.</p>
+    </div>
+  </footer>
+
+  <!-- Script de lógica para WhatsApp -->
+  <script type="module" src="/main.js"></script>
+  <script>
+    document.getElementById('whatsappForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const numeroWhatsApp = '+521234567890'; // Marcador que el usuario podrá cambiar fácilmente
+
+      const nombre = document.getElementById('nombre').value;
+      const cantidad = document.getElementById('cantidad').value;
+      const ciudad = document.getElementById('ciudad').value;
+      const mensaje = document.getElementById('mensaje').value;
+
+      const texto = `Hola, me interesa el Mezcal Admirable.%0A%0A*Mi nombre:* ${nombre}%0A*Cantidad:* ${cantidad} botella(s)%0A*Ciudad:* ${ciudad}%0A*Mensaje:* ${mensaje || 'Sin detalles extra'}.%0A%0A¿Me podrían dar más información sobre el pago y envío?`;
+
+      const url = `https://wa.me/${numeroWhatsApp}?text=${texto}`;
+      window.open(url, '_blank');
+    });
+  </script>
+</body>
+
 </html>
